@@ -115,10 +115,6 @@ $desktop-width: 1200px;
   margin-top: 48px;
   display: ruby-text;
 
-  @include mobile {
-    width: 32px;
-  }
-
   .button_container_item {
     border: 1px solid white;
     border-radius: 39px;
