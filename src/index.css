@@ -12,6 +12,7 @@ body {
 
   background-image: linear-gradient(-90deg, #cb1ae8 0%, #37bda6 100%);
   color: white;
+  font-family: poppins;
 }
 
 code {

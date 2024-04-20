@@ -46,13 +46,13 @@ $desktop-width: 1200px;
     }
     .icon_menu {
       .icon_menu_icon {
-        color: white;
-        width: 66px;
-        height: 53px;
+        display: none;
 
         @include mobile {
-          .icon_menu_icon {
-          }
+          display: block;
+          color: white;
+          width: 66px;
+          height: 53px;
         }
       }
     }
@@ -62,6 +62,7 @@ $desktop-width: 1200px;
 .content {
   margin-top: 36px;
   color: white;
+  line-height: 40px;
 
   .text_content {
     text-align: center;
@@ -79,19 +80,24 @@ $desktop-width: 1200px;
   }
 }
 
-.button_btn {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-  margin-top: 42px;
+.button_container {
+  margin-top: 48px;
 
-  .item_button {
+  .button_container_item {
     border: 1px solid white;
     border-radius: 39px;
-    margin-top: 10px;
     font-weight: 500;
-    padding: 8px 0;
+    padding: 10px;
+    display: block;
+    min-width: 200px;
+    width: 250px;
+    margin: auto;
+    margin-top: 14px;
+
+    // &:hover {
+    //   background-color: #fff;
+    //   color: black;
+    // }
   }
   .button_started {
     background: white;

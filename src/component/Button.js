@@ -3,9 +3,13 @@ import "./HomePage.scss";
 
 const Button = () => {
   return (
-    <div className="button_btn">
-      <button className="btn item_button button_started">get started</button>
-      <button className="btn item_button button_free">try for free</button>
+    <div className="button_container">
+      <button className="btn button_container_item button_started">
+        get started
+      </button>
+      <button className="btn button_container_item button_free">
+        try for free
+      </button>
     </div>
   );
 };
