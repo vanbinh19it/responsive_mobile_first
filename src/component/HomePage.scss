@@ -24,6 +24,25 @@ $desktop-width: 1200px;
   .navbar_logo {
     height: 78px;
     width: 186px;
+    cursor: pointer;
+  }
+
+  ul.navbar_menu_item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+
+    .navbar_menu_list_item {
+      margin-right: 16px;
+      color: white;
+      margin-right: 38px;
+    }
   }
 
   .navbar_menu_button {
@@ -66,38 +85,58 @@ $desktop-width: 1200px;
 
   .text_content {
     text-align: center;
-    font-weight: 500;
-    width: 80%;
     margin: auto;
+    width: 35%;
+    padding: 2px 16px;
+
+    @include mobile {
+      width: 80%;
+      padding: 2px 12px;
+    }
 
     .text_content_second {
       font-size: 36px;
+      font-weight: bold;
+
+      @include mobile {
+        font-weight: 500;
+      }
     }
 
     .text_content_sub {
       font-size: 13px;
+      font-weight: 500;
+      line-height: 32px;
     }
   }
 }
 
 .button_container {
   margin-top: 48px;
+  display: ruby-text;
+
+  @include mobile {
+    width: 32px;
+  }
 
   .button_container_item {
     border: 1px solid white;
     border-radius: 39px;
     font-weight: 500;
     padding: 10px;
-    display: block;
-    min-width: 200px;
-    width: 250px;
+    // min-width: 180px;
     margin: auto;
-    margin-top: 14px;
+    width: 140px;
+    margin-left: 12px;
 
-    // &:hover {
-    //   background-color: #fff;
-    //   color: black;
-    // }
+    @include mobile {
+      padding: 10px;
+      display: block;
+      min-width: 200px;
+      width: 250px;
+      margin: auto;
+      margin-top: 14px;
+    }
   }
   .button_started {
     background: white;

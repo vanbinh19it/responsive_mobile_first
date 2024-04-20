@@ -9,6 +9,14 @@ const HeaderNavbar = () => {
       <div className="navbar_logo">
         <img src="./images/Logo.png" alt="logo" />
       </div>
+      {/* <div className="navbar_menu"> */}
+      <ul className="navbar_menu_item">
+        <li className="navbar_menu_list_item">Home</li>
+        <li className="navbar_menu_list_item">Product</li>
+        <li className="navbar_menu_list_item">About</li>
+        <li className="navbar_menu_list_item">Contact</li>
+      </ul>
+      {/* </div> */}
       <div className="navbar_menu_button">
         <div className="btn_signUp">
           <CButton className="btn_signUp_button">Sign Up</CButton>
