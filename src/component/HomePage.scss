@@ -54,12 +54,14 @@ $desktop-width: 1200px;
         font-size: 12px;
         border-radius: 16px;
         border-radius: 39px;
-        padding: 8px 20px;
+
+        padding: 8px 24px;
         border: 0.5px solid white;
         background-image: linear-gradient(-90deg, #a541d6, #b431dd);
         color: white;
 
         @include mobile {
+          padding: 8px 20px;
         }
       }
     }
@@ -86,12 +88,12 @@ $desktop-width: 1200px;
   .text_content {
     text-align: center;
     margin: auto;
-    width: 35%;
+    min-width: 35%;
     padding: 2px 16px;
 
     @include mobile {
-      width: 80%;
-      padding: 2px 12px;
+      padding: 2px 48px;
+      min-width: 80%;
     }
 
     .text_content_second {
@@ -115,21 +117,23 @@ $desktop-width: 1200px;
   margin-top: 48px;
   display: ruby-text;
 
+  @include mobile {
+    margin-top: 12px;
+  }
+
   .button_container_item {
     border: 1px solid white;
     border-radius: 39px;
     font-weight: 500;
     padding: 10px;
-    // min-width: 180px;
+    min-width: 180px;
     margin: auto;
-    width: 140px;
     margin-left: 12px;
 
     @include mobile {
       padding: 10px;
       display: block;
-      min-width: 200px;
-      width: 250px;
+      min-width: 220px;
       margin: auto;
       margin-top: 14px;
     }
